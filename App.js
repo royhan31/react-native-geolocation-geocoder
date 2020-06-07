@@ -23,7 +23,7 @@ export default class App extends Component<Props> {
             //});
             
             
-     const pos = await fetch('https://api.mapbox.com/geocoding/v5/mapbox.places/'+position.coords.longitude+','+position.coords.latitude+'.json?types=poi&access_token=pk.eyJ1Ijoicm95aGFuMzEiLCJhIjoiY2tiMHlqYXR4MDl2bDMybG85NmRhYnZpbCJ9.urVhhUv6-sqOBUILPc7H1g')
+     const pos = await fetch('https://api.mapbox.com/geocoding/v5/mapbox.places/'+position.coords.longitude+','+position.coords.latitude+'.json?types=poi&access_token=YOUR_KEY')
      .then(res => res.json())
      .then(res => res.features[0].context)
      
